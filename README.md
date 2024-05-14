@@ -24,5 +24,5 @@ The source and destination directory can be configured at the top of the script,
 even though this shouldn't really be needed as the path to the Desktop folder is auto-determined from the 
 user's environment and the Adobe CC fonts directory is located under a standard path in the user's %APPDATA%.
 
-### Kudos
-This script is essentially a PowerShell port of [kalaschik/adobe-fonts-revealer]
+### Acknowledgements
+This script is a fork of [pawalan/adobe-fonts-liberator], which is essentially a PowerShell port of [kalaschik/adobe-fonts-revealer]
