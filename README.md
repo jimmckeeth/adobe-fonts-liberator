@@ -25,4 +25,4 @@ even though this shouldn't really be needed as the path to the Desktop folder is
 user's environment and the Adobe CC fonts directory is located under a standard path in the user's %APPDATA%.
 
 ### Acknowledgements
-This script is a fork of [pawalan/adobe-fonts-liberator](https://github.com/pawalan/adobe-fonts-liberator), which is essentially a PowerShell port of [kalaschik/adobe-fonts-revealer](https://github.com/kalaschik/adobe-fonts-revealer)
+This script is a fork of [pawalan/adobe-fonts-liberator](https://github.com/pawalan/adobe-fonts-liberator), which is essentially a PowerShell port of [kalaschnik/adobe-fonts-revealer](https://github.com/kalaschnik/adobe-fonts-revealer)
