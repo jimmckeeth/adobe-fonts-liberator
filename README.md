@@ -26,3 +26,4 @@ user's environment and the Adobe CC fonts directory is located under a standard 
 
 ### Acknowledgements
 This script is a fork of [pawalan/adobe-fonts-liberator](https://github.com/pawalan/adobe-fonts-liberator), which is essentially a PowerShell port of [kalaschnik/adobe-fonts-revealer](https://github.com/kalaschnik/adobe-fonts-revealer)
+Owing heavily to the fork originally written by https://github.com/BylliGoat
