@@ -63,4 +63,14 @@ Get-ChildItem -Path $AdobeFontsDir -Force | ForEach-Object {
 Write-Output "`n`r`n`rLong live the free fonts!`n`r`n`rBye!`n`r"
 
 # Keep the window open until a key is pressed
-Read-Host -Prompt "Press any key to exit..."
+$timeoutSeconds = 10
+Write-Host "Press any key to exit or wait $timeoutSeconds seconds..."
+$startTime = Get-Date
+while (-not [System.Console]::KeyAvailable -and ((Get-Date) - $startTime).TotalSeconds -lt $timeoutSeconds) {
+    $remainingTime = [Math]::Ceiling($timeoutSeconds - ((Get-Date) - $startTime).TotalSeconds)
+    Write-Host "`rTime remaining: $remainingTime seconds..." -NoNewline
+    Start-Sleep -Milliseconds 100
+}
+if ([System.Console]::KeyAvailable) {
+    [System.Console]::ReadKey($true) | Out-Null
+}
